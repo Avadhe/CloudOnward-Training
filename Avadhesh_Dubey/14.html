@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images and Media - CloudOnward</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Images and Media</h1>
+
+        <!-- YouTube Video Embed -->
+        <iframe src="https://www.youtube.com/embed/5wqgXsZQJuk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Topic Explanation -->
+        <p>Responsive images and media ensure that visual content scales properly across different devices and screen sizes.</p>
+
+        <h2>Responsive Images:</h2>
+        <p>To make images responsive, use the <code>max-width</code> property to ensure images adapt to the width of their container.</p>
+        <pre><code>img {
+    max-width: 100%;
+    height: auto;
+}</code></pre>
+
+        <h2>Responsive Media:</h2>
+        <p>For videos and other media, set the width to 100% to ensure they scale with their container.</p>
+        <pre><code>.responsive-video {
+    width: 100%;
+    height: auto;
+}</code></pre>
+
+        <h2>Additional Resources</h2>
+        <p>For further reading and practice, refer to the following resources:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Responsive_Images" target="_blank">MDN Web Docs: Responsive Images</a></li>
+            <li><a href="https://www.smashingmagazine.com/2018/03/implementing-responsive-images/" target="_blank">Smashing Magazine: Implementing Responsive Images</a></li>
+            <li><a href="https://www.w3schools.com/css/css_rwd_images.asp" target="_blank">W3Schools: Responsive Images</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations and Transitions - CloudOnward</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            transition: background-color 0.5s ease;
+        }
+
+        .animated-element:hover {
+            background-color: #e74c3c;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in {
+            animation: slideIn 1s ease-out;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Animations and Transitions</h1>
+
+        <!-- YouTube Video Embed -->
+        <iframe src="https://www.youtube.com/embed/3jvMmnvV2dA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Topic Explanation -->
+        <p>CSS animations and transitions add dynamic effects to web elements, enhancing user experience with smooth changes in styles.</p>
+
+        <h2>Transitions:</h2>
+        <p>CSS transitions allow you to change property values smoothly over a given duration.</p>
+        <pre><code>.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: background-color 0.5s ease;
+}
+
+.animated-element:hover {
+    background-color: #e74c3c;
+}</code></pre>
+
+        <h2>Animations:</h2>
+        <p>CSS animations enable keyframe-based animation, allowing for more complex animations beyond simple transitions.</p>
+        <pre><code>@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
+}</code></pre>
+
+        <h2>Additional Resources</h2>
+        <p>For further reading and practice, refer to the following resources:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions" target="_blank">MDN Web Docs: CSS Transitions</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" target="_blank">MDN Web Docs: CSS Animations</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/t/transition/" target="_blank">CSS-Tricks: Transition</a></li>
+        </ul>
+    </div>
+</body>
+</html>

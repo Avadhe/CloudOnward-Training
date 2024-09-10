@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Training Record - CloudOnward</title>
+    <style>
+        body {
+            background-image: url('6.jpg');
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+   #day1 {
+    background-image: url('8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    display: none;
+    min-height: 100vh; /* Ensures the section takes up at least the full viewport height */
+}
+
+#day2 {
+            background-image: url('2.jpg');
+            background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    display: none;
+    min-height: 100vh;
+        }
+ #day3 {
+            background-image: url('7.jpg');
+            background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    display: none;
+    min-height: 100vh;
+        }
+ #day4 {
+            background-image: url('3.jpg');
+            background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    display: none;
+    min-height: 100vh;
+        }
+#day5 {
+            background-image: url('9.jpg');
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+           padding: 50px 20px;
+           display: none;
+            min-height: 100vh;
+        }
+
+
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        main section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+
+
+
+        }
+
+        .toggleButton {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggleButton:hover {
+            background-color: #0056b3;
+        }
+
+        .toggleButton .icon {
+            margin-right: 10px;
+        }
+
+        /* Greeting styles */
+        .greeting {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 30px;
+           }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CloudOnward Training</h1>
+
+
+
+    </header>
+    <div class="greeting" id="greetingMessage"></div> <!-- Dynamic Greeting -->
+    <nav>
+        <ul>
+            <li><a href="#day1">Day 1</a></li>
+            <li><a href="#day2">Day 2</a></li>
+            <li><a href="#day3">Day 3</a></li>
+            <li><a href="#day4">Day 4</a></li>
+            <li><a href="#day5">Day 5</a></li>
+        </ul>
+    </nav>
+    <main>
+        <button class="toggleButton" data-target="#day1">
+            <span class="icon">➕</span> Show Day 1
+        </button>
+        <section id="day1">
+            <h2>Day 1: Introduction to UI Development</h2>
+            <ul>
+                <li><a href="2.html">Overview of UI Development</a></li>
+                <li><a href="3.html">Introduction to UI/UX design principles</a></li>
+                <li><a href="4.html">HTML Basics</a></li>
+                <li><a href="5.html">Structure of an HTML document</a></li>
+                <li><a href="6.html">Common HTML elements</a></li>
+                <li><a href="7.html">Practical Exercise: Create a simple HTML page</a></li>
+            </ul>
+        </section>
+
+        <button class="toggleButton" data-target="#day2">
+            <span class="icon">➕</span> Show Day 2
+        </button>
+        <section id="day2">
+            <h2>Day 2: CSS Basics</h2>
+            <ul>
+                <li><a href="8.html">Introduction to CSS</a></li>
+                <li><a href="9.html">What is CSS and how it works</a></li>
+                <li><a href="10.html">Selectors, properties, and values</a></li>
+                <li><a href="11.html">Box model: content, padding, border, margin</a></li>
+                <li><a href="12.html">Basic layout techniques (float, flexbox)</a></li>
+                <li><a href="13.html">Practical Exercise: Style the HTML page created on Day 1</a></li>
+            </ul>
+        </section>
+
+        <button class="toggleButton" data-target="#day3">
+            <span class="icon">➕</span> Show Day 3
+        </button>
+        <section id="day3">
+            <h2>Day 3: JavaScript Basics</h2>
+            <ul>
+                <li><a href="7.html">Introduction to JavaScript</a></li>
+                <li><a href="javascript-variables.html">Variables, data types, and operators</a></li>
+                <li><a href="basic-functions.html">Basic functions and events</a></li>
+                <li><a href="dom-manipulation.html">DOM Manipulation</a></li>
+                <li><a href="selecting-elements.html">Selecting elements and modifying content</a></li>
+                <li><a href="event-listeners.html">Event listeners and interactivity</a></li>
+                <li><a href="exercise-day3.html">Practical Exercise: Add simple interactivity to the HTML/CSS project</a></li>
+            </ul>
+        </section>
+
+        <button class="toggleButton" data-target="#day4">
+            <span class="icon">➕</span> Show Day 4
+        </button>
+        <section id="day4">
+            <h2>Day 4: How to Use the Design System</h2>
+            <ul>
+                <li><a href="intro-design-system.html">Introduction to the Design System</a></li>
+                <li><a href="using-design-components.html">How to Use Design Components in Creating Layouts</a></li>
+                <li><a href="browser-extensions.html">Basic Browser Extensions for Spelling Checks and Accessibility Scores</a></li>
+            </ul>
+        </section>
+
+        <button class="toggleButton" data-target="#day5">
+            <span class="icon">➕</span> Show Day 5
+        </button>
+        <section id="day5">
+            <h2>Day 5: Project and Wrap-Up</h2>
+            <ul>
+                <li><a href="mini-project.html">Mini Project: Plan and Design a Small Web Page</a></li>
+                <li><a href="implement-page.html">Implement the Page with HTML, CSS, and JavaScript/Bootstrap</a></li>
+                <li><a href="present-project.html">Present the Mini Project</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CloudOnward Training Program</p>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.toggleButton').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = document.querySelector(button.getAttribute('data-target'));
+
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    button.querySelector('.icon').textContent = '➕';
+                    button.textContent = button.textContent.replace('Hide', 'Show');
+                } else {
+                    content.style.display = 'block';
+                    button.querySelector('.icon').textContent = '➖';
+                    button.textContent = button.textContent.replace('Show', 'Hide');
+                }
+            });
+        });
+
+        // Existing script to get greeting
+function getGreeting() {
+    const now = new Date();
+    const hour = now.getHours();
+    let greeting;
+
+    if (hour < 12) {
+        greeting = "Good Morning!";
+    } else if (hour < 18) {
+        greeting = "Good Afternoon!";
+    } else {
+        greeting = "Good Evening!";
+    }
+
+    return greeting;
+}
+
+// Display the greeting with the username
+function displayGreeting() {
+    const username = localStorage.getItem('username'); // Retrieve username from localStorage
+    const greetingMessage = getGreeting();
+    const finalGreeting = username ? `${greetingMessage} ${username}` : greetingMessage;
+    document.getElementById('greetingMessage').textContent = finalGreeting;
+}
+
+displayGreeting(); // Call the function to display the greeting
+
+
+
+
+    </script>
+</body>
+</html>
+

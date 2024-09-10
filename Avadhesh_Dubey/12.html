@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout Techniques (Float, Flexbox) - CloudOnward</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Layout Techniques (Float, Flexbox)</h1>
+
+        <!-- YouTube Video Embed -->
+        <iframe src="https://www.youtube.com/embed/6v3UJZ0h12I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Topic Explanation -->
+        <p>Layout techniques in CSS allow you to arrange elements on a webpage. Two fundamental techniques are using floats and flexbox.</p>
+
+        <h2>Float:</h2>
+        <p>The float property is used for positioning and formatting content, such as images or text, within a container. The float property can take values such as <code>left</code>, <code>right</code>, or <code>none</code>.</p>
+        <pre><code>.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 10px;
+}</code></pre>
+
+        <h2>Flexbox:</h2>
+        <p>Flexbox is a layout model that provides an efficient way to align and distribute space among items in a container. It allows for flexible and responsive layouts with ease.</p>
+        <pre><code>.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 5px;
+}</code></pre>
+
+        <h2>Additional Resources</h2>
+        <p>For further reading and practice, refer to the following resources:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Float_and_clear" target="_blank">MDN Web Docs: Float and Clear</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-Tricks: A Guide to Flexbox</a></li>
+            <li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3Schools: CSS Flexbox</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is CSS and How it Works - CloudOnward</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What is CSS and How it Works</h1>
+
+        <!-- YouTube Video Embed -->
+        <iframe src="https://www.youtube.com/embed/8Mpc9ukltVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Topic Explanation -->
+        <p>Cascading Style Sheets (CSS) is a stylesheet language that describes the presentation of a document written in HTML. It allows you to apply styles to web documents and control the layout and appearance of elements.</p>
+
+        <h2>How CSS Works:</h2>
+        <ul>
+            <li><strong>CSS Rules:</strong> A CSS rule consists of a selector and a declaration block. The selector targets HTML elements, and the declaration block contains property-value pairs (e.g., <code>color: red;</code>).</li>
+            <li><strong>Applying Styles:</strong> CSS can be applied in three ways: inline styles (using the <code>style</code> attribute), internal styles (within the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code>), and external styles (using a separate CSS file linked via the <code>&lt;link&gt;</code> tag).</li>
+            <li><strong>Cascade and Specificity:</strong> CSS rules follow a cascade, meaning styles are applied in a specific order. Specificity determines which rule is applied if multiple rules target the same element.</li>
+        </ul>
+
+        <h2>Additional Resources</h2>
+        <p>For further reading and practice, refer to the following resources:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Introduction_to_CSS" target="_blank">MDN Web Docs: Introduction to CSS</a></li>
+            <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">W3Schools: CSS Introduction</a></li>
+            <li><a href="https://www.smashingmagazine.com/category/css/" target="_blank">Smashing Magazine: CSS Articles</a></li>
+        </ul>
+    </div>
+</body>
+</html>

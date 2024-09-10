@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Accessibility (ARIA, Keyboard Navigation) - CloudOnward</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Accessibility (ARIA, Keyboard Navigation)</h1>
+
+        <!-- YouTube Video Embed -->
+        <iframe src="https://www.youtube.com/embed/A6g0mPRlxzE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Topic Explanation -->
+        <p>Web accessibility ensures that web content is usable by everyone, including people with disabilities. Key components include ARIA (Accessible Rich Internet Applications) and keyboard navigation.</p>
+
+        <h2>ARIA (Accessible Rich Internet Applications):</h2>
+        <p>ARIA attributes enhance the accessibility of web content for users with disabilities by providing additional information about elements.</p>
+        <pre><code>&lt;button aria-label="Close" onclick="closeWindow()"&gt;&times;&lt;/button&gt;</code></pre>
+
+        <h2>Keyboard Navigation:</h2>
+        <p>Ensure that users can navigate your site using only a keyboard by implementing focus management and ensuring all interactive elements are accessible.</p>
+        <pre><code>&lt;a href="#" tabindex="0"&gt;Clickable Link&lt;/a&gt;</code></pre>
+
+        <h2>Additional Resources</h2>
+        <p>For further reading and practice, refer to the following resources:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank">MDN Web Docs: ARIA</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">W3C: Web Content Accessibility Guidelines (WCAG)</a></li>
+            <li><a href="https://a11yproject.com/" target="_blank">The A11Y Project: Accessibility Resources</a></li>
+        </ul>
+    </div>
+</body>
+</html>
